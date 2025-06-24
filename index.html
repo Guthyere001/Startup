@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrein - Centro de Saúde e Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <h2>Nutrein</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#professionals" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            Profissionais
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#exercises" class="nav-link">
+                            <i class="fas fa-dumbbell"></i>
+                            Exercícios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#store" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            Loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforme sua vida com saúde e fitness</h1>
+            <p>Profissionais qualificados, exercícios personalizados e suplementos de qualidade</p>
+            <div class="hero-buttons">
+                <button class="cta-button" onclick="scrollToSection('professionals')">
+                    <i class="fas fa-users"></i>
+                    Nossos Profissionais
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('store')">
+                    <i class="fas fa-shopping-cart"></i>
+                    Loja de Suplementos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professionals Section -->
+    <section id="professionals" class="professionals">
+        <div class="container">
+            <h2 class="section-title">Nossos Profissionais</h2>
+            <div class="professionals-grid">
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Dr. Marcus David</h3>
+                    <p class="specialty">Ortopedista</p>
+                    <p>Especialista em lesões esportivas e reabilitação ortopédica</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Dr. Marcus David')">Agendar Consulta</button>
+                </div>
+                
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Romulo Jardel</h3>
+                    <p class="specialty">Personal Trainer</p>
+                    <p>Treinador especializado em condicionamento físico e performance</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Romulo Jardel')">Agendar Treino</button>
+                </div>
+
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Dra. Ana Silva</h3>
+                    <p class="specialty">Cardiologista</p>
+                    <p>Especialista em saúde cardiovascular e medicina esportiva</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Dra. Ana Silva')">Agendar Consulta</button>
+                </div>
+
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutricionista Laura</h3>
+                    <p class="specialty">Nutricionista Esportiva</p>
+                    <p>Planos alimentares personalizados para atletas e praticantes</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Nutricionista Laura')">Consultar</button>
+                </div>
+
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Dr. Pedro Lima</h3>
+                    <p class="specialty">Psicólogo Esportivo</p>
+                    <p>Preparação mental e motivacional para atletas</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Dr. Pedro Lima')">Agendar Sessão</button>
+                </div>
+
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Fisioterapeuta João</h3>
+                    <p class="specialty">Fisioterapia Esportiva</p>
+                    <p>Reabilitação e prevenção de lesões esportivas</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                    <button class="contact-btn" onclick="contactProfessional('Fisioterapeuta João')">Agendar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises" class="exercises">
+        <div class="container">
+            <h2 class="section-title">Exercícios por Grupo Muscular</h2>
+            <div class="muscle-groups">
+                <div class="muscle-group-tabs">
+                    <button class="tab-btn active" data-target="chest">Peito</button>
+                    <button class="tab-btn" data-target="back">Costas</button>
+                    <button class="tab-btn" data-target="shoulders">Ombros</button>
+                    <button class="tab-btn" data-target="arms">Braços</button>
+                    <button class="tab-btn" data-target="legs">Pernas</button>
+                    <button class="tab-btn" data-target="abs">Abdômen</button>
+                </div>
+
+                <div class="exercise-content">
+                    <div id="chest" class="exercise-group active">
+                        <h3>Exercícios para Peito</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Supino Reto</h4>
+                                <p>3-4 séries de 8-12 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Flexão de Braço</h4>
+                                <p>3 séries de 10-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Supino Inclinado</h4>
+                                <p>3-4 séries de 8-10 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Crucifixo</h4>
+                                <p>3 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Mergulho</h4>
+                                <p>3 séries de 8-12 repetições</p>
+                                <span class="difficulty advanced">Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="back" class="exercise-group">
+                        <h3>Exercícios para Costas</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Puxada na Polia</h4>
+                                <p>3-4 séries de 8-12 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Remada Curvada</h4>
+                                <p>3-4 séries de 8-10 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Barra Fixa</h4>
+                                <p>3 séries de 5-10 repetições</p>
+                                <span class="difficulty advanced">Avançado</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Remada Unilateral</h4>
+                                <p>3 séries de 10-12 repetições cada braço</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Levantamento Terra</h4>
+                                <p>3-4 séries de 6-8 repetições</p>
+                                <span class="difficulty advanced">Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="shoulders" class="exercise-group">
+                        <h3>Exercícios para Ombros</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Desenvolvimento</h4>
+                                <p>3-4 séries de 8-12 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Elevação Lateral</h4>
+                                <p>3 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Elevação Frontal</h4>
+                                <p>3 séries de 10-12 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Remada Alta</h4>
+                                <p>3 séries de 10-12 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Crucifixo Inverso</h4>
+                                <p>3 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="arms" class="exercise-group">
+                        <h3>Exercícios para Braços</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Rosca Direta</h4>
+                                <p>3-4 séries de 10-12 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Tríceps Testa</h4>
+                                <p>3 séries de 10-12 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Rosca Martelo</h4>
+                                <p>3 séries de 10-12 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Tríceps Pulley</h4>
+                                <p>3 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Rosca Concentrada</h4>
+                                <p>3 séries de 8-10 repetições cada braço</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="legs" class="exercise-group">
+                        <h3>Exercícios para Pernas</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Agachamento</h4>
+                                <p>3-4 séries de 10-15 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Leg Press</h4>
+                                <p>3-4 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Afundo</h4>
+                                <p>3 séries de 10-12 repetições cada perna</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Cadeira Extensora</h4>
+                                <p>3 séries de 12-15 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Mesa Flexora</h4>
+                                <p>3 séries de 10-12 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Panturrilha em Pé</h4>
+                                <p>4 séries de 15-20 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="abs" class="exercise-group">
+                        <h3>Exercícios para Abdômen</h3>
+                        <div class="exercise-list">
+                            <div class="exercise-item">
+                                <h4>Abdominal Tradicional</h4>
+                                <p>3 séries de 15-20 repetições</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Prancha</h4>
+                                <p>3 séries de 30-60 segundos</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Abdominal Oblíquo</h4>
+                                <p>3 séries de 12-15 repetições cada lado</p>
+                                <span class="difficulty beginner">Iniciante</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Mountain Climber</h4>
+                                <p>3 séries de 20-30 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                            <div class="exercise-item">
+                                <h4>Russian Twist</h4>
+                                <p>3 séries de 20-30 repetições</p>
+                                <span class="difficulty intermediate">Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="store">
+        <div class="container">
+            <h2 class="section-title">Loja de Suplementos</h2>
+            <div class="store-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="protein">Proteínas</button>
+                <button class="filter-btn" data-category="pre-workout">Pré-Treino</button>
+                <button class="filter-btn" data-category="vitamins">Vitaminas</button>
+                <button class="filter-btn" data-category="creatine">Creatina</button>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-category="protein">
+                    <div class="product-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Whey Protein Premium</h3>
+                    <p class="product-description">Proteína de alta qualidade para ganho de massa muscular</p>
+                    <div class="product-price">R$ 89,90</div>
+                    <button class="add-to-cart" data-product="Whey Protein Premium" data-price="89.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="pre-workout">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Pré-Treino Extreme</h3>
+                    <p class="product-description">Energia e foco para treinos intensos</p>
+                    <div class="product-price">R$ 65,90</div>
+                    <button class="add-to-cart" data-product="Pré-Treino Extreme" data-price="65.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="creatine">
+                    <div class="product-image">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Creatina Monohidratada</h3>
+                    <p class="product-description">Aumento de força e potência muscular</p>
+                    <div class="product-price">R$ 45,90</div>
+                    <button class="add-to-cart" data-product="Creatina Monohidratada" data-price="45.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Multivitamínico</h3>
+                    <p class="product-description">Complexo vitamínico completo</p>
+                    <div class="product-price">R$ 35,90</div>
+                    <button class="add-to-cart" data-product="Multivitamínico" data-price="35.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="protein">
+                    <div class="product-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Barra de Proteína</h3>
+                    <p class="product-description">Lanche proteico prático e saboroso</p>
+                    <div class="product-price">R$ 8,90</div>
+                    <button class="add-to-cart" data-product="Barra de Proteína" data-price="8.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Vitamina D3</h3>
+                    <p class="product-description">Fortalecimento ósseo e imunidade</p>
+                    <div class="product-price">R$ 28,90</div>
+                    <button class="add-to-cart" data-product="Vitamina D3" data-price="28.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="pre-workout">
+                    <div class="product-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Termogênico</h3>
+                    <p class="product-description">Acelera o metabolismo e queima gordura</p>
+                    <div class="product-price">R$ 55,90</div>
+                    <button class="add-to-cart" data-product="Termogênico" data-price="55.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+
+                <div class="product-card" data-category="protein">
+                    <div class="product-image">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <h3>Albumina</h3>
+                    <p class="product-description">Proteína de absorção lenta</p>
+                    <div class="product-price">R$ 42,90</div>
+                    <button class="add-to-cart" data-product="Albumina" data-price="42.90">
+                        <i class="fas fa-shopping-cart"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div id="cart" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button id="close-cart" class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                Total: R$ <span id="cart-total">0,00</span>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <button id="cart-btn" class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-count">0</span>
+    </button>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Flores, 123 - Centro<br>São Paulo, SP - 01234-567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@fitlife.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FitLife</h3>
+                    <p>Transformando vidas através da saúde e fitness</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#professionals">Profissionais</a></li>
+                        <li><a href="#exercises">Exercícios</a></li>
+                        <li><a href="#store">Loja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitLife. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
